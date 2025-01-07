@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!----------- start link icon  ------------->
+
+  <!----------- end link icon  ------------->
+
+  <!----------- start link font  ------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!----------- end link font  ------------->
+
+  <!----------- start link font-awesome  ------------->
+  <script src="https://kit.fontawesome.com/a56113d515.js" crossorigin="anonymous"></script>
+  <!----------- end link font-awesome  ------------->
+
+  <!----------- start link AOS css ------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!----------- end link AOS css ------------->
+
+  <!----------- start link bootstrap css  ------------->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!----------- end link bootstrap css  ------------->
+
+  <!----------- start link my css  ------------->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!----------- end link my css  ------------->
+
+
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar bg-body-tertiary d-none" id="navbar">
+    <div class="container">
+      <h3 class="text-white fw-light">Smart Login</h3>
+      <button class="btn btn-outline-warning" id="logout">Log Out</button>
+    </div>
+  </nav>
+
+  <section id="Login-page">
+
+    <div class="container w-75">
+
+      <div class="Login  py-5 px-5 mt-5 w-75 mx-auto">
+        <h1 class=" text-center mb-4">Smart Login System</h1>
+
+        <div class=" mb-3 myinput">
+          <input type="email" class="form-control bg-transparent text-white" id="emailLogin"
+            placeholder="Enter Your Email">
+            <p class="text-danger d-none " id="invalid-email">Invalid Email</p>
+
+        </div>
+
+        <div class=" mb-3 myinput">
+          <input type="password" class="form-control bg-transparent  text-white" id="passwordLogin"
+            placeholder="Enter Your Password">
+            <p class="text-danger d-none " id="invalid-pass">Invalid password</p>
+
+        </div>
+
+
+        <button class="btn btn-outline-info w-100 mt-3" id="Loginbtn">Login</button>
+
+
+        <p class="text-white text-center mt-3 ">Don't have an account?
+          <a href="#" class="text-white text-decoration-none" id="signUpAnchor">Sign Up</a>
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+  <section id="sign-up" class="d-none">
+
+    <div class="container w-75">
+
+      <div class="Login  py-5 px-5 mt-5 w-75 mx-auto">
+        <h1 class=" text-center mb-4">Smart Login System</h1>
+
+        <div class=" mb-3 myinput">
+          <input type="text" class="form-control bg-transparent  text-white" id="Name" placeholder="Enter Your Name">
+
+          <div id="Name-warn" class="d-none">
+            <p class="text-danger ">Enter a name not less than 3 characters</p>
+          </div>
+
+
+        </div>
+
+        <div class=" mb-3 myinput">
+          <input type="email" class="form-control bg-transparent  text-white" id="emailSignup"
+            placeholder="Enter Your Email">
+
+          <div id="emailSignup-warn"  class="d-none">
+            <p class="text-danger ">Enter a valid email</p>
+            
+          </div>
+      
+
+        </div>
+
+        <div class=" mb-3 myinput">
+          <input type="password" class="form-control bg-transparent  text-white" id="passwordSignup"
+            placeholder="Enter Your Password">
+          
+            <div id="passwordSignup-warn"  class="d-none">
+              <p class="text-danger">Enter a valid password (minimum 8 characters, including letters and numbers).</p>
+
+            </div>
+
+        </div>
+
+
+        <button class="btn btn-outline-info w-100 mt-3" id="SignUpBtn">Sign Up</button>
+
+
+        <p class="text-white text-center mt-3 ">You already Have an account?
+          <a href="#" class="text-white text-decoration-none" id="loginAnchor">Sign In</a>
+        </p>
+
+        <p class="text-danger text-center d-none" id="fillinputs">all inputs must be filled</p>
+        <p class="text-success text-center d-none" id="Success">Success</p>
+        <p class="text-danger text-center d-none" id="exist">Email already exist</p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+<section class="home d-none" id="home">
+
+  <div class="container w-75">
+
+    <div class="Login  py-5 px-5 mt-5 w-75 mx-auto">
+
+
+
+      <h1 class="text-center" id="userName">Welcome</h1>
+    </div>
+
+  </div>
+  
+
+
+</section>
+
+
+
+
+
+
+
+  <!----------- start link typed js ------------->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!----------- end link typed js  ------------->
+
+
+
+  <!----------- start link bootstrap js  ------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!----------- end link bootstrap css  ------------->
+
+  <!----------- start link AOS js ------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!----------- start link AOS js ------------->
+
+  <!----------- start link my js  ------------->
+  <script src="js/index.js"></script>
+  <!----------- end link my js  ------------->
+
+</body>
+
+</html>
